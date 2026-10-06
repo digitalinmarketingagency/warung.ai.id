@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Website Warung.ai.id sedang disiapkan. Sampai jumpa sebentar lagi.">
+  <meta name="theme-color" content="#234735">
+  <title>Warung.ai.id — Segera hadir</title>
+  <style>
+    :root { color-scheme: light; --paper: #f8f6ee; --ink: #234735; --muted: #58675c; --line: #d9dfd2; --orange: #c84c28; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; min-height: 100svh; background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+    .page { max-width: 1160px; min-height: 100vh; min-height: 100svh; margin: auto; padding: 36px 52px 26px; display: flex; flex-direction: column; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-bottom: 28px; border-bottom: 1px solid var(--line); }
+    .brand { display: flex; align-items: center; gap: 12px; font-size: 24px; font-weight: 700; letter-spacing: -.8px; }
+    .brand-mark { display: grid; place-items: center; width: 38px; height: 38px; background: var(--ink); color: var(--paper); border-radius: 12px; font-size: 22px; }
+    .domain { font-size: 13px; color: var(--muted); }
+    main { flex: 1; display: grid; grid-template-columns: 1.25fr 1fr; align-items: center; gap: 48px; padding: 72px 0; }
+    .badge { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; letter-spacing: 1.7px; text-transform: uppercase; }
+    .badge::before { content: ""; width: 8px; height: 8px; background: var(--orange); border-radius: 50%; }
+    h1 { margin: 26px 0; max-width: 620px; font-size: clamp(42px, 5.5vw, 72px); line-height: 1.05; letter-spacing: -3px; font-weight: 600; }
+    h1 span { display: block; font-family: Georgia, "Times New Roman", serif; font-style: italic; font-weight: 400; color: var(--orange); }
+    .intro { max-width: 360px; font-size: 17px; line-height: 1.75; color: var(--muted); margin: 0; }
+    .small-note { display: inline-block; margin-top: 34px; padding: 13px 18px; border: 1px solid var(--line); border-radius: 99px; font-size: 13px; color: var(--ink); }
+    .illustration { aspect-ratio: 1; width: 100%; max-width: 390px; margin: auto; border-radius: 50%; background: #e9eddf; display: grid; place-items: center; position: relative; }
+    .illustration svg { width: 88%; height: auto; display: block; }
+    .stamp { position: absolute; bottom: 5%; right: 0; transform: rotate(-10deg); border-radius: 50%; width: 100px; height: 100px; background: var(--orange); color: #fff9ee; display: grid; place-items: center; text-align: center; line-height: 1.4; font-size: 12px; font-weight: 700; letter-spacing: 1px; border: 6px solid var(--paper); }
+    footer { display: flex; justify-content: space-between; gap: 20px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+    @media (max-width: 700px) {
+      .page { padding: 24px; }
+      header { padding-bottom: 22px; }
+      .brand { font-size: 22px; }
+      main { grid-template-columns: 1fr; gap: 44px; padding: 48px 0; }
+      h1 { letter-spacing: -2px; }
+      .illustration { max-width: 280px; }
+      .stamp { width: 82px; height: 82px; font-size: 10px; }
+      footer { flex-wrap: wrap; }
+    }
+    @media (max-width: 360px) { header { align-items: flex-start; flex-direction: column; gap: 12px; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="brand"><span class="brand-mark" aria-hidden="true">w</span>warung<span aria-hidden="true">.</span></div>
+      <span class="domain">warung.ai.id</span>
+    </header>
+    <main>
+      <section aria-labelledby="title">
+        <div class="badge">Segera hadir</div>
+        <h1 id="title">Sedang meracik <span>sesuatu.</span></h1>
+        <p class="intro">Website Warung.ai.id sedang disiapkan. Kami sedang menata halaman ini untuk menyambut kamu.</p>
+        <div class="small-note">Sampai jumpa sebentar lagi.</div>
+      </section>
+      <div class="illustration" aria-hidden="true">
+        <svg viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="181" cy="293" rx="115" ry="11" fill="#234735" fill-opacity=".12"/>
+          <path d="M91 170H269V286H91V170Z" fill="#F8F6EE" stroke="#234735" stroke-width="6" stroke-linejoin="round"/>
+          <path d="M80 143L105 95H255L280 143V170H80V143Z" fill="#234735" stroke="#234735" stroke-width="6" stroke-linejoin="round"/>
+          <path d="M105 96H136L126 143H80L105 96Z" fill="#C84C28"/>
+          <path d="M164 96H195L201 143H158L164 96Z" fill="#C84C28"/>
+          <path d="M223 96H255L280 143H237L223 96Z" fill="#C84C28"/>
+          <path d="M80 143H126V161C126 174 116 183 103 183C90 183 80 174 80 161V143Z" fill="#C84C28"/>
+          <path d="M126 143H158V161C158 174 151 183 142 183C133 183 126 174 126 161V143Z" fill="#234735"/>
+          <path d="M158 143H201V161C201 174 192 183 180 183C168 183 158 174 158 161V143Z" fill="#C84C28"/>
+          <path d="M201 143H237V161C237 174 229 183 219 183C209 183 201 174 201 161V143Z" fill="#234735"/>
+          <path d="M237 143H280V161C280 174 271 183 259 183C247 183 237 174 237 161V143Z" fill="#C84C28"/>
+          <path d="M114 206H193V253H114V206Z" fill="#E9EDDF" stroke="#234735" stroke-width="5" stroke-linejoin="round"/>
+          <path d="M153 207V253" stroke="#234735" stroke-width="5"/>
+          <path d="M218 207H249V286H218V207Z" fill="#E9EDDF" stroke="#234735" stroke-width="5" stroke-linejoin="round"/>
+          <circle cx="239" cy="247" r="3" fill="#234735"/>
+          <path d="M157 75C153 62 158 56 160 48M180 75C176 62 182 56 184 48M203 75C199 62 204 56 207 48" stroke="#234735" stroke-width="4" stroke-linecap="round"/>
+          <path d="M66 211V236M54 223H78" stroke="#C84C28" stroke-width="4" stroke-linecap="round"/>
+          <path d="M292 81V101M282 91H302" stroke="#C84C28" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <div class="stamp">DIBUAT<br>DENGAN<br>SEMANGAT</div>
+      </div>
+    </main>
+    <footer><span>© 2026 Warung.ai.id</span><span>Halaman sementara</span></footer>
+  </div>
+</body>
+</html>
